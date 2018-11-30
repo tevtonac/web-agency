@@ -5,6 +5,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family:  sans-serif;
 }
 
 html {
@@ -16,38 +17,72 @@ body {
 }
 
 .header {
-  height: 95vh;
+  position: relative;
+  height: 90vh;
   width: 100%;
-  background-color: red;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-image: linear-gradient(
     to right bottom,
     rgba(220, 227, 91, .8),
     rgba(69, 182, 73, .8)),
     url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3e684a2ba58e985b993ccd3e26cb36d5&auto=format&fit=crop&w=1919&q=80);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 nav {
-  background: #000;
+  background: rgba(0,0,0, 0);
 }
 
 nav a {
+  background-color: rgba(69, 182, 73, .8);
   color: #fff;
   display: block;
   text-decoration: none;
-  padding: 4px 8px;
-  border-bottom: 1px solid gray;
+  padding: .6rem;
   text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  font-weight: 800;
+}
+
+nav a:not(:last-child){
+    border-bottom: 1px solid white;
 }
 
 nav a:hover {
-  background: #333;
+  background-color: #333;
 }
+
+
+.caption {
+  position: absolute;
+  width: 80%;
+  height: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.caption .heading-main {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 2rem;
+  margin-bottom: 2rem;
+}
+
+.caption .heading-sub {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+}
+
 
 @media(min-width: 600px) {
   nav {
     text-align: center;
-    background-color: #333;
   }
 
   nav a {
