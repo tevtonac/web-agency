@@ -1,0 +1,21 @@
+body {
+    color:rgba(0, 0, 0, 0.8);
+    background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-27819.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-color: rgb(100, 100, 100); */
+    font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header, footer{
+    color:rgb(5, 5, 5);
+    /* background-color:rgb(44, 44, 44); */
+    overflow: auto; /*Da margine ne bi probijale parent*/
+}
+.crveno {
+    color:rgba(173, 3, 3, 0.644);
+}
