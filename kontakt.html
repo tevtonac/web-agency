@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="o-nama.html">o-nama</a>
+            <a href="usluge.html">usluge</a>
+            <a href="kontakt.html">kontakt</a>
+         </nav>
+    </header>
+
+    <form method="post">
+
+  <p><b>Kontaktirajte nas putem forme</b> popunite polja ispod</p>
+
+  <div>
+    <label for="ime">Username:</label>
+    <input id="ime" name="ime" minlength="5" placeholder="Ovde unesite ime" required>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" type="email" id="email" name="email" placeholder="Ovde unesite email" required>
+  </div>
+
+  <div>
+    <label for="poruka">Ostavite poruku</label>
+    <textarea name="poruka" id="poruka" placeholder="Unesite poruku ovde"></textarea>
+  </div>
+
+  <!-- <div>
+    <label for="uslovi">Uslovi koristenja</label>
+    <input name="uslovi" id="uslovi" type="checkbox">Prihvatam uslove koristenja</textarea>
+  </div> -->
+
+  <div class="flex-right">
+    <button>Posalji</button>
+  </div>
+</form>
+  </body>
+</html>
